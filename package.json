@@ -1,0 +1,27 @@
+{
+   "name": "lilith",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "@types/ws": "^7.2.4",
+      "nodemon": "^2.0.3",
+      "rimraf": "^3.0.2",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "build": "rimraf ./build && tsc",
+      "dev": "nodemon"
+   },
+   "dependencies": {
+      "discord.js": "^12.2.0",
+      "dotenv": "^8.2.0",
+      "mysql2": "^2.1.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.24",
+      "mysql": "^2.14.1"
+   }
+}
