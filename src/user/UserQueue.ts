@@ -9,7 +9,7 @@ export function addToQueue(user: User) {
 }
 
 export function releaseQueue(storage: IUserStorage) {
-    for (let id of queue) {
+    for (const id of queue) {
         const user = storage.getById(id);
         if (user == null) continue;
 
@@ -26,5 +26,6 @@ export function startQueue(storage: IUserStorage) {
 
         console.log(`[Lilith] Releasing queue and clearing cache`);
         releaseQueue(storage);
-    }, 30000);
+
+    }, 60000);
 }
