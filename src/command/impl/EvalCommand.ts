@@ -1,6 +1,6 @@
 import {Command} from '../Command';
 import {Message, Permissions} from 'discord.js';
-1
+
 class EvalCommand extends Command {
 
   constructor() {
